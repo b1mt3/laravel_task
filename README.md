@@ -52,6 +52,7 @@ public function up()
 }
 ```
 **database\migrations\grocery_list**
+
 3. prepare the database and initiate the migration `php artisan migrate`
 4. create a *GroceryList* resource `php artisan make:resource GroceryList`
 5. populate *toArray()* method of the resource:
