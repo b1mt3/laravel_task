@@ -110,11 +110,11 @@ public function run()
 ```php
 $factory->define(App\GroceryList::class, function (Faker $faker) {
     return [
-  	    'product_id' => function () {
-  			    return factory(App\Product::class)->create()->id;
-  		  },
+        'product_id' => function () {
+            return factory(App\Product::class)->create()->id;
+        },
         'price' => $faker->randomNumber,
-  		  'quantity' => $faker->numberBetween($min = 1, $max = 1000),
+        'quantity' => $faker->numberBetween($min = 1, $max = 1000),
     ];
 });
 ```
@@ -124,8 +124,8 @@ $factory->define(App\Product::class, function (Faker $faker) {
     return [
         'product_name' => $faker->word,
         'group_id'=> function () {
-			  return factory(App\ProductGroup::class)->create()->id;
-		}
+            return factory(App\ProductGroup::class)->create()->id;
+        }
     ];
 });
 ```
